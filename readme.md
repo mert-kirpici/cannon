@@ -2,9 +2,9 @@
 Canonical OpenStack Validation Suite
 
 ## Quick Start
-Install the application in a virtual env
+Install the python package in editable mode in the development virtualenv
 ```
-python3 -m venv .venv
+make dev-environment
 source .venv/bin/activate
 python3 -m pip install -e .
 ```

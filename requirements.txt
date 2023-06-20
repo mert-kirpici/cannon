@@ -1,3 +1,0 @@
-cliff
-tempest==30.1.0  # yoga support
-python-tempestconf
