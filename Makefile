@@ -39,9 +39,7 @@ reformat:
 	@tox -e reformat
 
 build:
-	@echo "Building the snap"
-	@snapcraft --use-lxd
-	@bash -c ./rename.sh
+	@echo "Nothing to build"
 
 clean:
 	@echo "Cleaning snap"
