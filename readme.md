@@ -8,7 +8,7 @@ make dev-environment
 source .venv/bin/activate
 python3 -m pip install -e .
 ```
-Run a minimal VM spin up test
+Run a minimal VM spin-up test
 ```
 cannon functional run minimal
 ```

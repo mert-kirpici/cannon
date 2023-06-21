@@ -17,4 +17,4 @@ class Run(Command):
         return parser
 
     def take_action(self: Command, parsed_args: Namespace) -> None:
-        self.logger.info("Run called with:[%s]", parsed_args.scenario)
+        self.logger.info("Run called with: [%s]", parsed_args.scenario)
