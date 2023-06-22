@@ -1,5 +1,6 @@
 """Main module for the console script."""
 import sys
+import logging
 from typing import List
 
 from cliff.app import App
@@ -18,6 +19,13 @@ class CannonApp(App):
             version=VersionInfo("cannon").version_string(),
             deferred_help=True,
         )
+
+    def configure_logging(self):
+        super().configure_logging()
+        logging.getLogger("").handlers[0].setFormatter(
+            logging.Formatter("%(asctime)s %(levelname)s %(name)s - %(message)s")
+        )
+        return
 
 
 def main(argv: List[str] = sys.argv[1:]) -> int:  # pylint: disable=dangerous-default-value
